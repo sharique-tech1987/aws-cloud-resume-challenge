@@ -74,3 +74,14 @@
     wrapAround: true
   });
 })(jQuery);
+
+// Fetch the views value from Dynamo DB
+const counter = document.querySelector(".counter-number");
+async function updateCounter() {
+    let response = await fetch(
+        "https://2nhabva6b3r2y5cfcfovftbake0kqhaf.lambda-url.us-east-1.on.aws/"
+    );
+    let data = await response.json();
+    counter.innerHTML = `👀 Views: ${data}`;
+}
+updateCounter();
