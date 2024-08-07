@@ -1,5 +1,8 @@
 import json
 import boto3
+
+# Fetch views from DynamoDB and return it
+# Increase views count by 1
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('cloudresume')
 def handler(event, context):

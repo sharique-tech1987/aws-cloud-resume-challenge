@@ -1,3 +1,4 @@
+# Create Lamda function by using zip archive
 resource "aws_lambda_function" "my_func" {
     filename = data.archive_file.zip.output_path
     source_code_hash = data.archive_file.zip.output_base64sha256
@@ -59,17 +60,15 @@ resource "aws_iam_policy" "iam_policy_for_resume_project" {
   )
 }
 
+# Attach IAM role for lambda and policy
 resource "aws_iam_role_policy_attachment" "attach_iam_policy_to_iam_role" {
   role = aws_iam_role.iam_for_lambda.name
   policy_arn = aws_iam_policy.iam_policy_for_resume_project.arn
 }
 
-data "archive_file" "zip"{
-    type = "zip"
-    source_dir = "${path.module}/lambda"
-    output_path = "${path.module}/packedlambda.zip"
-}
-
+# Remove authorization from function URL
+# and added CORS. One can add their domain 
+# in allow_origins
 resource "aws_lambda_function_url" "url1" {
   function_name = aws_lambda_function.my_func.function_name
   authorization_type = "NONE"
