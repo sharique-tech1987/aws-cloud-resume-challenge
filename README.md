@@ -21,5 +21,5 @@ If you encounter an issue or have suggestions for improving this project, please
 
 [Sharique Ali](https://github.com/sharique-tech1987)
 
-Linkedin: [sharique](www.linkedin.com/in/sharique-khan-99934028)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](www.linkedin.com/in/sharique-khan-99934028)
 
