@@ -588,13 +588,13 @@ figure.snip1321 span {
 }
 figure.snip1321 i {
   position: relative!important;
-  font-size: 18px;
+  font-size: 50px;
   background-color: #a43f49;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   display: inline-block;
   text-align: center;
-  line-height: 40px;
+  line-height: 60px;
   border-radius: 5px;
   color: #fff;
 }
