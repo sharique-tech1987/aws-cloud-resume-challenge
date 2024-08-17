@@ -174,14 +174,14 @@ html {
 }
 
 .menu .social-network ul li a {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     display: inline-block;
     text-align: center;
-    line-height: 40px;
+    line-height: 70px;
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
-    font-size: 14px;
+    font-size: 50px;
     transition: all 0.5s;
 }
 
@@ -701,9 +701,9 @@ section.contact-me {
 
 @media screen and (max-width: 1680px) and (min-width: 846px) { 
     .menu .social-network ul li a {
-        width: 36px;
-        height: 36px;
-        line-height: 36px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
     }
 
     .menu .social-network ul li {
